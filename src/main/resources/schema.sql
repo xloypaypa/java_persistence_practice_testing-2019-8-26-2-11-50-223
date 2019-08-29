@@ -3,3 +3,8 @@ CREATE TABLE employee (
   name VARCHAR(64) NOT NULL,
   age   int(4) NOT NULL
 );
+
+CREATE TABLE company (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(64) NOT NULL
+);
