@@ -14,7 +14,7 @@ public interface EmployeeMapper {
     @Select("select * from employee order by id OFFSET #{startIndex} ROWS FETCH NEXT #{pageSize} ROWS ONLY")
     List<Employee> get(int startIndex, int pageSize);
 
-    @Insert("insert into employee values (#{employee.id}, #{employee.name}, #{employee.age})")
-    void insert(@Param(value = "employee") Employee employee);
+    @Insert("insert into employee values (#{employee.id}, #{employee.name}, #{employee.age}, #{companyId})")
+    void insert(@Param(value = "employee") Employee employee, int companyId);
 
 }

@@ -5,14 +5,16 @@ public class Employee {
     private int id;
     private String name;
     private int age;
+    private Company company;
 
     public Employee() {
     }
 
-    public Employee(int id, String name, int age) {
+    public Employee(int id, String name, int age, Company company) {
         this.id = id;
         this.name = name;
         this.age = age;
+        this.company = company;
     }
 
     public int getId() {
@@ -37,5 +39,13 @@ public class Employee {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

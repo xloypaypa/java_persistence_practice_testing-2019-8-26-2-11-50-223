@@ -20,13 +20,13 @@ public class EmployeeController {
     @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
     public void insert(@RequestBody Employee employee) {
-        this.employeeMapper.insert(employee);
+        this.employeeMapper.insert(employee, 1);
     }
 
     @GetMapping("")
     @ResponseBody
     public ResponseEntity<List<Employee>> get() {
-        return ResponseEntity.ok(this.employeeMapper.get(3, 2));
+        return ResponseEntity.ok(this.employeeMapper.get(0, 2));
     }
 
 }
