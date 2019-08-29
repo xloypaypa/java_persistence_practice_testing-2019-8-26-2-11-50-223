@@ -12,3 +12,8 @@ CREATE TABLE employee (
     FOREIGN KEY (company_id)
     REFERENCES company(id)
 );
+
+insert into company values (1, 'c1');
+insert into company values (2, 'c2');
+
+insert into employee values (1, 'e1', 18, 2);
