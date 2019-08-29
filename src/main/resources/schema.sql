@@ -4,7 +4,7 @@ CREATE TABLE company (
 );
 
 CREATE TABLE employee (
-  id INTEGER PRIMARY KEY,
+  employee_id INTEGER PRIMARY KEY,
   name VARCHAR(64) NOT NULL,
   age   int(4) NOT NULL,
   company_id INTEGER NOT NULL,
